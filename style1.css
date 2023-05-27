@@ -1,0 +1,389 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+body{
+    font-family: 'Fjalla One', sans-serif;  
+}
+
+
+.body{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* HEADER */
+    .header{ 
+        display: flex;
+        flex-flow: column nowrap;
+        
+    }
+        /* MENU */
+        .menu{
+            background-color: black;
+            position: fixed; 
+            width: 100%;
+            height: 80px; 
+            display: flex;
+            flex-flow: row nowrap;
+        }
+            /* LOGO */
+            .logo{
+                width: 20%;
+                height: auto;
+                margin-left: 5rem;  
+                flex: 1 1 auto;
+                display: flex;
+                align-items: center;
+            }
+            /* NAVBAR */
+            .navbar{  
+                width: 80%;
+                margin-right: 5rem;
+                flex: 1 1 auto;  
+                display: flex;             
+                justify-content: space-around;  
+                align-items: center;
+            }
+
+            .navbar a{
+                text-decoration: none;
+                color: ghostwhite;
+                
+            }
+
+            .navbar a:hover{
+                color: #D72323;
+            }
+
+
+        /* BANNER    */
+        .banner{
+            background-image: url(Img/bosque400.png);
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-texto{
+            font-family: 'Road Rage', cursive;
+            font-family: 'Metal Mania', cursive;
+            font-size: 3rem;
+            color: #D72323;
+            text-align: center;
+            text-shadow: 2px 2px 10px black;        
+        }
+
+    /* MAIN */
+    .contenido-ppal{
+        background-color: #F4F8F7;
+        display: flex;
+        flex-flow: column nowrap;       
+}
+        /* CINE TERROR */
+        .cine-terror{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-flow: column wrap;   
+        }
+
+        .cine-terror h2{
+            width: 80%;
+            margin-top: 3.5rem;
+            margin-left: 8rem;
+            font-size: 2rem;
+            text-align: left;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .cine-terror p, ol, h3{
+            width: 80%;
+            margin: 2.5rem 8rem;
+            text-align: left;
+        }
+
+.divisor{
+    height: 33px;
+
+}
+        /* TERROR-HORROR */
+        .terror-horror{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            height: 756px; 
+
+            
+        } 
+            .def-terror{
+                display: flex;
+                flex-flow: row nowrap;
+                height: 350px;             
+            }
+
+               .img-terror{
+                    display: flex;
+                    margin-left: 8rem;    
+                    width: 40%;
+                    height: 350px;             
+                }
+
+                .text-terror { 
+                    text-align: left;
+                    display: inline-block;
+                    width: 40%;
+                    padding: 0rem 2.5rem;
+                    background-color: #D4D7D1; 
+                    height: 350px;   
+                }
+
+               .text-terror h2{
+                    padding: 3rem 0px; 
+                }
+
+            .def-horror{
+                display: flex;
+                flex-flow: row nowrap;
+                height: 350px;                  
+            }
+
+                .img-horror{
+                    display: flex;
+                    width: 40%;
+                    height: 350px; 
+                }
+
+                .text-horror { 
+                    text-align: left;
+                    display: inline-block;
+                    width: 40%;
+                    padding: 0rem 2.5rem;
+                    background-color: #D4D7D1; 
+                    height: 350px;   
+                    margin-left: 8rem;
+                }
+
+            .text-horror h2{
+                    padding: 3rem 0px; 
+                }
+
+            .conclusion{
+                height: 56px;
+                text-align: center;
+                padding-top: 1rem; 
+                color: #ffffff;
+                flex: 1 1 100%;
+                background-color: black;
+            }
+
+         /* SUBGENEROS DEL TERROR */
+        .subgeneros{
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .text-subgeneros h2{
+            width: 80%;
+            margin-top: 3.5rem;
+            margin-left: 8rem;
+            font-size: 2rem;
+            text-align: left;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .text-subgeneros p, h3{
+            width: 80%;
+            margin: 2.5rem 8rem;
+            text-align: left;
+        }
+
+        /* POR QUE NOS ATRAE*/
+        .causa-atraccion{
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            height: auto;
+
+        }
+
+        /* RANKING*/
+        .ranking{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: auto;
+            
+        }
+
+            .host{
+                display: flex;
+                flex-flow: row nowrap; 
+                height: 300px;
+                width: 100%;   
+            }   
+
+                .card-host{
+                    display: flex;
+                    flex-flow: column nowrap; 
+                    
+                }
+
+                    .img-host img{
+                        border-radius: 12px;
+                        margin-left: 8rem;    
+                        height: 272px; 
+                        box-shadow: 2px 2px 10px  black; 
+                    }
+
+                    .descripcion-host{
+                        text-align: left;
+                        display: flex;
+                        margin-left: 8rem;
+                        font-size: 1.2rem;
+                    }
+
+                .video{ 
+                    display: inline-block;  
+                    margin-left: 8rem;
+                }
+
+
+            .gallery{
+                display: flex;
+                flex-flow: row wrap;
+            }   
+
+                .card {
+                    margin-left: 8rem;
+                    height: 320px;
+
+                }
+
+                .card img{
+                    border-radius: 12px;
+                    box-shadow: 2px 2px 10px  black; 
+
+                    
+                }
+
+                .card img:hover {
+                    transform: scale(1.1,1.1);
+                    box-shadow: 2px 2px 10px #D72323;   
+                
+                }
+           
+    /* FOOTER */
+    footer{
+        background-color: black;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+        .redes{
+           display: flex;
+           flex-flow: column nowrap;
+           width: 50%;   
+        }
+
+        .text-footer{
+            display: flex;
+            color: ghostwhite;
+            height: 40%;
+        }
+
+        .iconos{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 8rem;
+            width: 30%;
+        }
+
+        .iconos a{
+            text-decoration: none;
+            color: ghostwhite;
+            font-size: 1.5rem;
+        }
+
+        .iconos a:hover{
+            color: #D72323;
+        }
+
+        .derechos{
+            display: flex;
+            align-items: end;
+            color: ghostwhite;
+            height: 120px;
+            padding-left: 8rem;
+            font-size: 0.7rem;
+        }
+        
+        .contacto{
+            display: flex;
+            width: 20%;
+            height: 100%;
+        }
+
+
+        .formulario{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-end;
+
+            width: 30%;
+            margin-right: 8rem;
+        }
+
+        input, textarea {
+            border: 1px solid #D4D7D1;
+            border-radius: 2px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            padding: 0.5rem;
+            width: 300px;
+            margin-top: 1rem;
+
+        }
+
+        label {
+            margin-right: 1rem;
+            color: #ffffff;
+        
+        }
+
+        button{
+            border: 1px solid #D4D7D1;
+            border-radius: 2px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            padding: 0.3rem;
+            width: 120px;
+            margin-top: 1rem;
+            font-family: 'Fjalla One', sans-serif;  
+            background-color: #D4D7D1;
+            float: right;
+        }
+
+
+
+
+
+
+
+
+
