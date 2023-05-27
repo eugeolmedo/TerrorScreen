@@ -222,7 +222,7 @@
         </div>
         <div class="formulario">
             <form action="" method="post"></form>
-            <form action="https://formspree.io/f/mvonnwjd" method="POST">
+            <form action="https://formspree.io/f/mvonnwjd" name="formulario" method="POST">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre">
                 <br>
@@ -232,10 +232,39 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="5" columns="10"></textarea>
                 <br>
-                <button type="submit">Enviar</button>
-                    
+                <button type="submit" id="btn">Enviar</button>     
             </form>
             
+            <script>
+                formulario=document.getElementsByName("formulario")[0]
+                elementos=formulario.elementos
+                boton=document.getElementById("btn")
+
+                validarNombre=function(e){
+                    if(formulario.nombre.value==0){
+                        alert("Debe completar el Nombre")
+                    }            
+                }
+                validarCorreo=function(e){
+                    if(formulario.correo.value==0){
+                        alert("Debe escribir un correo")
+                    }            
+                }
+
+                validarMensaje=function(e){
+                    if(formulario.mensaje.value==0){
+                        alert("Escriba un mensaje")
+                    }            
+                }
+
+                validar = function (e){
+                    validarNombre(e)
+                    validarCorreo(e)
+                    validarMensaje(e)
+                }
+
+                formulario.addEventListener("submit",validar)
+            </script>
         </div>
 
 
